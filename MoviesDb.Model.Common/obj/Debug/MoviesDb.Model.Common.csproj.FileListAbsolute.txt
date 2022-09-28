@@ -1,0 +1,14 @@
+C:\Users\Mirko\source\repos\MoviesDB\MoviesDb.Model.Common\bin\Debug\MoviesDb.Model.Common.dll.config
+C:\Users\Mirko\source\repos\MoviesDB\MoviesDb.Model.Common\bin\Debug\MoviesDb.Model.Common.dll
+C:\Users\Mirko\source\repos\MoviesDB\MoviesDb.Model.Common\bin\Debug\MoviesDb.Model.Common.pdb
+C:\Users\Mirko\source\repos\MoviesDB\MoviesDb.Model.Common\bin\Debug\AutoMapper.dll
+C:\Users\Mirko\source\repos\MoviesDB\MoviesDb.Model.Common\bin\Debug\Ninject.dll
+C:\Users\Mirko\source\repos\MoviesDB\MoviesDb.Model.Common\bin\Debug\Ninject.Web.Common.dll
+C:\Users\Mirko\source\repos\MoviesDB\MoviesDb.Model.Common\bin\Debug\AutoMapper.xml
+C:\Users\Mirko\source\repos\MoviesDB\MoviesDb.Model.Common\bin\Debug\Ninject.xml
+C:\Users\Mirko\source\repos\MoviesDB\MoviesDb.Model.Common\bin\Debug\Ninject.Web.Common.xml
+C:\Users\Mirko\source\repos\MoviesDB\MoviesDb.Model.Common\obj\Debug\MoviesDb.Model.Common.csproj.AssemblyReference.cache
+C:\Users\Mirko\source\repos\MoviesDB\MoviesDb.Model.Common\obj\Debug\MoviesDb.Model.Common.csproj.CoreCompileInputs.cache
+C:\Users\Mirko\source\repos\MoviesDB\MoviesDb.Model.Common\obj\Debug\MoviesDb.Model.Common.csproj.CopyComplete
+C:\Users\Mirko\source\repos\MoviesDB\MoviesDb.Model.Common\obj\Debug\MoviesDb.Model.Common.dll
+C:\Users\Mirko\source\repos\MoviesDB\MoviesDb.Model.Common\obj\Debug\MoviesDb.Model.Common.pdb
