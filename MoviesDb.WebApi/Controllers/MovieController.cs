@@ -21,9 +21,9 @@ namespace MoviesDb.WebAPI.Controllers
         }
         [System.Web.Http.HttpGet]
         [System.Web.Http.Route("")]
-        public HttpResponseMessage GetAll()
+        public HttpResponseMessage GetAll(String searchString = null)
         {
-            IEnumerable<IMovieDomainModel> movies = MovieService.GetAll();
+            IEnumerable<IMovieDomainModel> movies = MovieService.GetAll(searchString);
             return Request.CreateResponse(HttpStatusCode.OK, movies);
         }
 

@@ -19,7 +19,7 @@ namespace MoviesDb.DAL
 
         public int TmdbId { get; set; }
 
-        [StringLength(50)]
+        [StringLength(255)]
         public string Name { get; set; }
 
         [Column(TypeName = "date")]

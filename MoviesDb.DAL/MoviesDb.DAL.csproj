@@ -111,7 +111,7 @@
     <Compile Include="DatabaseModels\MovieCredit.cs" />
     <Compile Include="DatabaseModels\MovieGenre.cs" />
     <Compile Include="MoviesDbContext.cs" />
-    <Compile Include="MoviesDbContextTemp.cs" />
+    <Compile Include="MOviesDbContextTemp.cs" />
     <Compile Include="DatabaseModels\Person.cs" />
     <Compile Include="DatabaseModels\PersonMovieCredit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

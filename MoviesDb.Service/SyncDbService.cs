@@ -103,7 +103,7 @@ namespace MoviesDb.Service
                     currentPage++;
                     totalPages = result.TotalPages;
                 }
-            } while (currentPage <= 3);
+            } while (currentPage <= 3); // for testing and development used only first 3 pages but this can be changed to curentPage <= totalPages to get all
             return moviesList.GroupBy(t => t.Id).Select(g => g.First()).ToList();
         }
 

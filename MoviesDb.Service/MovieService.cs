@@ -1,6 +1,7 @@
 ﻿using MoviesDb.Model.Common;
 using MoviesDb.Repository.Common;
 using MoviesDb.Service.Common;
+using System;
 using System.Collections.Generic;
 
 namespace MoviesDb.Service
@@ -14,9 +15,9 @@ namespace MoviesDb.Service
             MovieRepository = movieRepository;
         }
 
-        public IEnumerable<IMovieDomainModel> GetAll()
+        public IEnumerable<IMovieDomainModel> GetAll(String searchString)
         {
-            return MovieRepository.GetAll();
+            return MovieRepository.GetAll(searchString);
         }
     }
 }

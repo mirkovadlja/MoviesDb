@@ -8,7 +8,7 @@ namespace MoviesDb.Repository.Common
 {
     public interface IMovieRepository
     {
-        IEnumerable<IMovieDomainModel> GetAll();
+        IEnumerable<IMovieDomainModel> GetAll(String searchString);
         IMovieDomainModel GetById(Guid id);
         void Insert(IMovieDomainModel movie);
         void InsertRange(IEnumerable<IMovieDomainModel> movies);

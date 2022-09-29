@@ -18,4 +18,5 @@ C:\Users\Mirko\source\repos\MoviesDB\MoviesDb.Repository.Common\obj\Debug\Movies
 C:\Users\Mirko\source\repos\MoviesDB\MoviesDb.Repository.Common\bin\Debug\MoviesDb.DAL.Common.dll
 C:\Users\Mirko\source\repos\MoviesDB\MoviesDb.Repository.Common\bin\Debug\MoviesDb.DAL.Common.pdb
 C:\Users\Mirko\source\repos\MoviesDB\MoviesDb.Repository.Common\bin\Debug\MoviesDb.DAL.Common.dll.config
+C:\Users\Mirko\source\repos\MoviesDB\MoviesDb.Repository.Common\bin\Debug\EntityFramework.dll
 C:\Users\Mirko\source\repos\MoviesDB\MoviesDb.Repository.Common\bin\Debug\EntityFramework.xml

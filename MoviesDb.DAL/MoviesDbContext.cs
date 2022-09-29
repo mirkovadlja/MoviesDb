@@ -20,19 +20,11 @@ namespace MoviesDb.DAL
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Genre>()
-                .Property(e => e.Name)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Genre>()
                 .HasMany(e => e.MovieGenres)
                 .WithRequired(e => e.Genre)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Movie>()
-                .Property(e => e.OriginalTitle)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Movie>()
                 .HasMany(e => e.MovieGenres)
                 .WithRequired(e => e.Movie)
                 .WillCascadeOnDelete(false);
@@ -43,17 +35,9 @@ namespace MoviesDb.DAL
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<MovieCredit>()
-                .Property(e => e.Name)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<MovieCredit>()
                 .HasMany(e => e.PersonMovieCredits)
                 .WithRequired(e => e.MovieCredit)
                 .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<Person>()
-                .Property(e => e.Name)
-                .IsUnicode(false);
 
             modelBuilder.Entity<Person>()
                 .HasMany(e => e.PersonMovieCredits)

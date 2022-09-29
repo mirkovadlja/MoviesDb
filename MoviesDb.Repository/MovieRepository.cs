@@ -19,13 +19,25 @@ namespace MoviesDb.Repository
             _context = new MoviesDbContext();
             Mapper = new AutoMapperConfiguration().Configure().CreateMapper();
         }
-        public IEnumerable<IMovieDomainModel> GetAll()
+        public IEnumerable<IMovieDomainModel> GetAll(String searchString)
         {
-            var moviesList = _context.Movies
-                .Include(movie => movie.MovieGenres.Select(genre => genre.Genre))
-                .Include(movie => movie.PersonMovieCredits.Select(pmc => pmc.Person))
-                .Include(movie => movie.PersonMovieCredits.Select(pmc => pmc.MovieCredit))
-                .ToList();
+            List<Movie> moviesList = new List<Movie>();
+            if (searchString == null || searchString.Trim().Length == 0)
+            {
+                moviesList = _context.Movies
+                    .Include(movie => movie.MovieGenres.Select(genre => genre.Genre))
+                    .Include(movie => movie.PersonMovieCredits.Select(pmc => pmc.Person))
+                    .Include(movie => movie.PersonMovieCredits.Select(pmc => pmc.MovieCredit))
+                    .ToList();
+            }
+            else {
+                moviesList = _context.Movies
+                   .Include(movie => movie.MovieGenres.Select(genre => genre.Genre))
+                   .Include(movie => movie.PersonMovieCredits.Select(pmc => pmc.Person))
+                   .Include(movie => movie.PersonMovieCredits.Select(pmc => pmc.MovieCredit))
+                   .Where(movie => movie.OriginalTitle.Contains(searchString))
+                   .ToList();
+            }
             List<IMovieDomainModel> resultList = new List<IMovieDomainModel>();
             foreach (Movie movie in moviesList) { 
                 //Mapping genres
